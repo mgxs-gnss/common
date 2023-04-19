@@ -12,7 +12,7 @@ import Taviraj from "./fonts/taviraj/Taviraj-Regular.ttf";
 //@ts-ignore
 import VCR_OSD_Mono_400 from "./fonts/VCR_OSD_Mono_400.ttf";
 
-const themeOptions: ThemeOptions = {
+export const themeOptions: ThemeOptions = {
   palette: {
     mode: "dark",
     primary: {
@@ -27,13 +27,18 @@ const themeOptions: ThemeOptions = {
     },
   },
   typography: {
-    fontFamily: "Taviraj",
+    fontFamily: "IBMPlexMono",
   },
 };
 
-export const Theme = ({ children }: PropsWithChildren) => {
+interface Theme extends PropsWithChildren {
+  customTheme?: ThemeOptions;
+}
+
+export const Theme = ({ customTheme, children }: Theme) => {
   const darkTheme = createTheme({
     ...themeOptions,
+    ...customTheme,
     components: {
       MuiCssBaseline: {
         styleOverrides: `
@@ -52,6 +57,7 @@ export const Theme = ({ children }: PropsWithChildren) => {
           }
         `,
       },
+      ...customTheme.components,
     },
   });
 
