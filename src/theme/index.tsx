@@ -57,7 +57,7 @@ export const Theme = ({ customTheme, children }: Theme) => {
           }
         `,
       },
-      ...customTheme.components,
+      ...customTheme?.components,
     },
   });
 

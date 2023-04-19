@@ -1,6 +1,6 @@
 {
   "name": "@gnss/common",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "GNSS LIbrary of common components",
   "main": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
