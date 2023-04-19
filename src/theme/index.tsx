@@ -31,11 +31,11 @@ export const themeOptions: ThemeOptions = {
   },
 };
 
-interface Theme extends PropsWithChildren {
+interface ITheme extends PropsWithChildren {
   customTheme?: ThemeOptions;
 }
 
-export const Theme = ({ customTheme, children }: Theme) => {
+export const Theme = ({ customTheme, children }: ITheme) => {
   const darkTheme = createTheme({
     ...themeOptions,
     ...customTheme,
