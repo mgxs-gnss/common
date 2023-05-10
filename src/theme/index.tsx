@@ -39,7 +39,31 @@ export const Theme = ({ customTheme, children }: ITheme) => {
   const darkTheme = createTheme({
     ...themeOptions,
     ...customTheme,
+    typography: {
+      ...themeOptions.typography,
+      h5: {
+        ...themeOptions.typography,
+        fontWeight: "bold",
+      },
+      h6: {
+        ...themeOptions.typography,
+        fontWeight: "bold",
+      },
+    },
     components: {
+      MuiTypography: {
+        defaultProps: {
+          letterSpacing: -0.4,
+        },
+      },
+      MuiButton: {
+        defaultProps: {
+          sx: {
+            fontWeight: "bold",
+            lineHeight: 4,
+          },
+        },
+      },
       MuiCssBaseline: {
         styleOverrides: `
           @font-face {
