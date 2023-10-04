@@ -1,7 +1,7 @@
 name: MGXS Common NPM Publish pipeline
 on:
 	push:
-	  branches: main
+	  branch: main
   
 jobs:
 	publish:
