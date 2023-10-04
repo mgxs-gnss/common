@@ -51,6 +51,27 @@ export const Theme = ({ customTheme, children }: ITheme) => {
       },
     },
     components: {
+      MuiBreadcrumbs: {
+        styleOverrides: {
+          root: {
+            alignItems: "baseline",
+          },
+        },
+      },
+      MuiLink: {
+        styleOverrides: {
+          root: {
+            lineHeight: 1,
+            fontSize: 14,
+            textDecoration: "none",
+            borderBottom: "1px solid rgba(255, 255, 255, 0)",
+            transition: "all .2s ease-out",
+            ":hover": {
+              borderBottom: "1px solid rgba(255, 255, 255, 1)",
+            },
+          },
+        },
+      },
       MuiTypography: {
         defaultProps: {
           letterSpacing: -0.4,
