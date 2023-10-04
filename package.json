@@ -1,5 +1,5 @@
 {
-  "name": "@gnss/common",
+  "name": "@mgxs/common",
   "version": "1.0.5",
   "description": "GNSS LIbrary of common components",
   "main": "dist/index.esm.js",
