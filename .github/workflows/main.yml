@@ -1,18 +1,39 @@
+name: MGXS Common NPM Publish pipeline
 on:
 	push:
 	  branches: main
   
-  jobs:
+jobs:
 	publish:
-	  runs-on: ubuntu-latest
-	  steps:
-		- uses: actions/checkout@v3
-		- uses: actions/setup-node@v3
-		  with:
-			node-version: "18"
-		- run: npm ci
-		- uses: JS-DevTools/npm-publish@v2
-		  with:
-			token: ${{ secrets.NPM_TOKEN }}
-			access: public
+    name: Build and Publish to NPM
+		runs-on: ubuntu-latest
+		steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+        node-version: "18"
+
+      - name: Cache node modules
+        uses: actions/cache@v3
+        id: cache-node-modules
+        with:
+          # Define multiple paths as an array
+          path: |
+            ./node_modules
+            ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+
+      - name: Install npm packages
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Publish to NPM
+        uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          access: public
   
