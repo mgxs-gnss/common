@@ -1,4 +1,4 @@
-# GNSS Common library
+# MGXS Common library
 
 - Creates Material-UI default theme
 - Spritesheet Loader Component
@@ -8,7 +8,7 @@ more to come
 ## Install on another React project
 
 ```sh
-npm add https://github.com/mgxs-gnss/common @emotion/react @emotion/styled @mui/material
+npm add @mgxs/common @emotion/react @emotion/styled @mui/material
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ npm add https://github.com/mgxs-gnss/common @emotion/react @emotion/styled @mui/
 On your `index.tsx` file from your React project add
 
 ```ts
-import { Theme } from "@gnss/common";
+import { Theme } from "@mgxs/common";
 import ReactDOM from "react-dom/client";
 import { App } from "./components";
 
@@ -36,7 +36,7 @@ root.render(
 ### Loader
 
 ```ts
-import { Loader } from "@gnss/common";
+import { Loader } from "@mgxs/common";
 
 const Page = () => {
   return <Loader scale={2} />;
