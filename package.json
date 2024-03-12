@@ -1,6 +1,6 @@
 {
   "name": "@mgxs/common",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "MGXS LIbrary of common components",
   "main": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
@@ -10,7 +10,7 @@
     "dist/**/*"
   ],
   "engines": {
-    "node": ">=18"
+    "node": "20"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,21 +29,21 @@
   "author": "Silvio Paganini <silvio@fluuu.id> (https://s2paganini.com)",
   "license": "MIT",
   "devDependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mui/material": "^5.11.14",
-    "@rollup/plugin-image": "^3.0.2",
-    "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-terser": "^0.4.0",
-    "@rollup/plugin-typescript": "^11.0.0",
-    "@rollup/plugin-url": "^8.0.1",
-    "@types/react": "^18.0.28",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.12",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@rollup/plugin-url": "^8.0.2",
+    "@types/react": "^18.2.65",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rimraf": "^4.4.0",
-    "rollup": "^3.20.0",
-    "tslib": "^2.5.0",
-    "typescript": "^4.9.5"
+    "rimraf": "^5.0.5",
+    "rollup": "^4.13.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.2"
   },
   "peerDependencies": {
     "@emotion/react": "^11.10.6",

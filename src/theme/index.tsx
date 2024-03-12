@@ -8,26 +8,28 @@ import { PropsWithChildren } from "react";
 //@ts-ignore
 import IBMPlexMono from "./fonts/ibm/IBMPlexMono-Regular.ttf";
 //@ts-ignore
-import Taviraj from "./fonts/taviraj/Taviraj-Regular.ttf";
-//@ts-ignore
-import VCR_OSD_Mono_400 from "./fonts/VCR_OSD_Mono_400.ttf";
+import Tomorrow from "./fonts/tomorrow/Tomorrow-Regular.ttf";
 
 export const themeOptions: ThemeOptions = {
   palette: {
     mode: "dark",
     primary: {
-      main: "rgb(197,255,2)",
+      main: "#EEFF41",
     },
     secondary: {
-      main: "#696969",
+      main: "#E5E7EB",
     },
     background: {
-      default: "#151414",
-      paper: "#121212",
+      default: "#1C1C1C",
+      paper: "#000000",
     },
   },
   typography: {
-    fontFamily: "IBMPlexMono",
+    fontFamily: "Tomorrow, Arial, Helvetica, sans-serif",
+    htmlFontSize: 16,
+    allVariants: {
+      lineHeight: 1.75,
+    },
   },
 };
 
@@ -82,23 +84,19 @@ export const Theme = ({ customTheme, children }: ITheme) => {
           sx: {
             fontWeight: "bold",
             lineHeight: 4,
+            fontFamily: "IBMPlexMono, Arial, Helvetica, sans-serif",
           },
         },
       },
       MuiCssBaseline: {
         styleOverrides: `
           @font-face {
-            font-family: Taviraj;
-            src: url(${Taviraj});
-          }
-          @font-face {
-            font-family: VCROSDMono;
-            src: url(${VCR_OSD_Mono_400});
-          }
-  
-          @font-face {
             font-family: IBMPlexMono;
             src: url(${IBMPlexMono});
+          }
+          @font-face {
+            font-family: Tomorrow;
+            src: url(${Tomorrow});
           }
         `,
       },
