@@ -1,6 +1,8 @@
 import {
+  alpha,
   createTheme,
   CssBaseline,
+  lighten,
   ThemeOptions,
   ThemeProvider,
 } from "@mui/material";
@@ -15,9 +17,11 @@ export const themeOptions: ThemeOptions = {
     mode: "dark",
     primary: {
       main: "#EEFF41",
+      light: lighten("#EEFF41", 0.1),
     },
     secondary: {
       main: "#E5E7EB",
+      dark: "#666",
     },
     background: {
       default: "#1C1C1C",
