@@ -1,6 +1,6 @@
 {
   "name": "@mgxs/common",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "MGXS LIbrary of common components",
   "main": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
@@ -31,13 +31,13 @@
   "devDependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.15.12",
+    "@mui/material": "^5.15.14",
     "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
     "@rollup/plugin-url": "^8.0.2",
-    "@types/react": "^18.2.65",
+    "@types/react": "^18.2.67",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
