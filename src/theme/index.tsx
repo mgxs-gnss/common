@@ -59,11 +59,16 @@ export const Theme = ({ customTheme, children }: ITheme) => {
       },
       MuiButton: {
         defaultProps: {
-          sx: {
+          sx: ({ palette, spacing }) => ({
+            borderRadius: 0,
+            clipPath: `polygon(85% 0px, 100% 50%, 100% 100%, 0px 100%, 0px 0px)`,
+            px: spacing(3),
             fontWeight: "bold",
             lineHeight: 4,
-            fontFamily: "IBMPlexMono, Arial, Helvetica, sans-serif",
-          },
+            "&:hover": {
+              background: palette.secondary.main,
+            },
+          }),
         },
       },
       MuiCssBaseline: {
