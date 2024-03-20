@@ -48,14 +48,6 @@ export const Theme = ({ customTheme, children }: ITheme) => {
     ...customTheme,
     typography: {
       ...themeOptions.typography,
-      h5: {
-        ...themeOptions.typography,
-        fontWeight: "bold",
-      },
-      h6: {
-        ...themeOptions.typography,
-        fontWeight: "bold",
-      },
     },
     components: {
       MuiBreadcrumbs: {
@@ -63,25 +55,6 @@ export const Theme = ({ customTheme, children }: ITheme) => {
           root: {
             alignItems: "baseline",
           },
-        },
-      },
-      MuiLink: {
-        styleOverrides: {
-          root: {
-            lineHeight: 1,
-            fontSize: 14,
-            textDecoration: "none",
-            borderBottom: "1px solid rgba(255, 255, 255, 0)",
-            transition: "all .2s ease-out",
-            ":hover": {
-              borderBottom: "1px solid rgba(255, 255, 255, 1)",
-            },
-          },
-        },
-      },
-      MuiTypography: {
-        defaultProps: {
-          letterSpacing: -0.4,
         },
       },
       MuiButton: {
