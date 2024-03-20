@@ -18,6 +18,7 @@ export const themeOptions: ThemeOptions = {
     primary: {
       main: "#EEFF41",
       light: lighten("#EEFF41", 0.1),
+      dark: "rgb(39, 39, 39)",
     },
     secondary: {
       main: "#E5E7EB",
