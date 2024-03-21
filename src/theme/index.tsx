@@ -13,6 +13,7 @@ import TomorrowBold from "./fonts/tomorrow/Tomorrow-Bold.ttf";
 //@ts-ignore
 import TomorrowMedium from "./fonts/tomorrow/Tomorrow-Medium.ttf";
 //@ts-ignore
+
 import TomorrowThin from "./fonts/tomorrow/Tomorrow-Thin.ttf";
 
 export const themeOptions: ThemeOptions = {
