@@ -10,7 +10,15 @@ import { PropsWithChildren } from "react";
 //@ts-ignore
 import IBMPlexMono from "./fonts/ibm/IBMPlexMono-Regular.ttf";
 //@ts-ignore
-import Tomorrow from "./fonts/tomorrow/Tomorrow-Regular.ttf";
+import TomorrowRegular from "./fonts/tomorrow/Tomorrow-Regular.ttf";
+//@ts-ignore
+import TomorrowBold from "./fonts/tomorrow/Tomorrow-Bold.ttf";
+//@ts-ignore
+import TomorrowLight from "./fonts/tomorrow/Tomorrow-Light.ttf";
+//@ts-ignore
+import TomorrowMedium from "./fonts/tomorrow/Tomorrow-Medium.ttf";
+//@ts-ignore
+import TomorrowThin from "./fonts/tomorrow/Tomorrow-Thin.ttf";
 
 export const themeOptions: ThemeOptions = {
   palette: {
@@ -70,6 +78,14 @@ export const Theme = ({ customTheme, children }: ITheme) => {
             },
           }),
         },
+        styleOverrides: {
+          text: {
+            textTransform: "capitalize",
+            font: "normal normal medium 14px/17px Tomorrow",
+            letterSpacing: "0.7px",
+            fontWeight: 500,
+          },
+        },
       },
       MuiCssBaseline: {
         styleOverrides: `
@@ -78,8 +94,28 @@ export const Theme = ({ customTheme, children }: ITheme) => {
             src: url(${IBMPlexMono});
           }
           @font-face {
-            font-family: Tomorrow;
-            src: url(${Tomorrow});
+            font-family: 'Tomorrow';
+            src: url(${TomorrowThin});
+            font-weight: 100;
+            font-style: normal;
+          }
+          @font-face {
+            font-family: 'Tomorrow';
+            src: url(${TomorrowRegular});
+            font-weight: 400;
+            font-style: normal;
+          }
+          @font-face {
+            font-family: 'Tomorrow';
+            src: url(${TomorrowMedium});
+            font-weight: 500;
+            font-style: normal;
+          }
+          @font-face {
+            font-family: 'Tomorrow';
+            src: url(${TomorrowBold});
+            font-weight: 700;
+            font-style: normal;
           }
         `,
       },
