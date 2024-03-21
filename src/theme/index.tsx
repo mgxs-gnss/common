@@ -14,8 +14,6 @@ import TomorrowRegular from "./fonts/tomorrow/Tomorrow-Regular.ttf";
 //@ts-ignore
 import TomorrowBold from "./fonts/tomorrow/Tomorrow-Bold.ttf";
 //@ts-ignore
-import TomorrowLight from "./fonts/tomorrow/Tomorrow-Light.ttf";
-//@ts-ignore
 import TomorrowMedium from "./fonts/tomorrow/Tomorrow-Medium.ttf";
 //@ts-ignore
 import TomorrowThin from "./fonts/tomorrow/Tomorrow-Thin.ttf";
