@@ -1,6 +1,6 @@
 {
   "name": "@mgxs/common",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "MGXS LIbrary of common components",
   "main": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
@@ -43,7 +43,7 @@
     "rimraf": "^5.0.5",
     "rollup": "^4.13.0",
     "tslib": "^2.6.2",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "peerDependencies": {
     "@emotion/react": "^11.10.6",
