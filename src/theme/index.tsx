@@ -1,5 +1,4 @@
 import {
-  alpha,
   createTheme,
   CssBaseline,
   lighten,
@@ -7,8 +6,6 @@ import {
   ThemeProvider,
 } from "@mui/material";
 import { PropsWithChildren } from "react";
-//@ts-ignore
-import IBMPlexMono from "./fonts/ibm/IBMPlexMono-Regular.ttf";
 //@ts-ignore
 import TomorrowRegular from "./fonts/tomorrow/Tomorrow-Regular.ttf";
 //@ts-ignore
@@ -87,10 +84,6 @@ export const Theme = ({ customTheme, children }: ITheme) => {
       },
       MuiCssBaseline: {
         styleOverrides: `
-          @font-face {
-            font-family: IBMPlexMono;
-            src: url(${IBMPlexMono});
-          }
           @font-face {
             font-family: 'Tomorrow';
             src: url(${TomorrowThin});
